@@ -6,4 +6,4 @@ The purpose of this project was for me to learn more about front-end web develop
 
 ## Initial Push
 So far, all I have is the cover page which consist of a minimalistic and clean design.
-![Sample](https://i.imgur.com/gYp8ghG.png)
+![Initial Cover Page](https://i.imgur.com/g1Y2MLf.png)
