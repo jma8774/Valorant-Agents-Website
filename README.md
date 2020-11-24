@@ -1,5 +1,5 @@
 # Valorant Agents Website
-Use this website to learn more about each of the Valorant agents.
+Use this website to learn more about each of the Valorant agents. You can find it [here](https://jma8774.github.io/Valorant-Agents-Website/).
 
 ## Purpose
 The purpose of this project was for me to learn more about front-end web development by using a framework called Bootstrap, which is focsed on "responsive, mobile-first front-end web development". At the same time while doing this, I will gain more experience with UI design which is something I wanted to learn for awhile now. Eventually, I want to get into making another website using Django and Python as the back-end.
