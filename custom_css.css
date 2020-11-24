@@ -45,20 +45,25 @@
   border-color: #7079b7 !important;
 }
 
+.border-skye {
+  border-color:	#73c697 !important;
+}
 .bg-darker {
   background-color: #313131;
 }
 
 .bg-darkest {
-  background-color: rgb(34, 40, 49, 0.75);
+  background-color: #222831;
 }
 
-.zoom {
+.char-zoom {
+  background-color: rgb(34, 40, 49, 0.75);
   transition: transform .2s;
 }
 
-.zoom:hover {
-  transform: scale(1.4);
+.char-zoom:hover {
+  transform: scale(1.8);
+  background-color: rgb(34, 40, 49, 1);
   z-index: 1;
 }
 
@@ -69,4 +74,8 @@
   height: 100%;
   background-size: cover;
   background-position: center;
+}
+
+.no-display {
+  opacity: 0;
 }
