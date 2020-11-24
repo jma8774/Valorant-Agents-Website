@@ -1,9 +1,12 @@
-# Valorant-Agents-Website
+# Valorant Agents Website
 Use this website to learn more about each of the Valorant agents.
 
 ## Purpose
-The purpose of this project was for me to learn more about front-end web development by using a framework called Bootstrap, which is focsed on "responsive, mobile-first front-end web development". Eventually, I want to get into making another website using Django and Python as the back-end.
+The purpose of this project was for me to learn more about front-end web development by using a framework called Bootstrap, which is focsed on "responsive, mobile-first front-end web development". At the same time while doing this, I will gain more experience with UI design which is something I wanted to learn for awhile now. Eventually, I want to get into making another website using Django and Python as the back-end.
 
 ## Initial Push
-So far, all I have is the cover page which consist of a minimalistic and clean design.
+So far, all I have is the cover page which consists of a responsive and minimalistic design.
 ![Initial Cover Page](https://i.imgur.com/g1Y2MLf.png)
+
+## Future Push
+Going to focus on developing pages for each of the characters.
