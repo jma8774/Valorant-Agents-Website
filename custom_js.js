@@ -1,10 +1,14 @@
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  alert("mobile phone")
+ }
+
 $(document).ready(function(){
   $("#a1-btn").click(function(){
     $("#a1").show();
     $("#a2").hide();
     $("#a3").hide();
     $("#a4").hide();
-    $('#a1-v').trigger('load');
+    $('#a1-v').trigger('play');
     $('#a2-v').trigger('pause');
     $('#a3-v').trigger('pause');
     $('#a4-v').trigger('pause');
