@@ -22,7 +22,7 @@
 }
 
 .border-reyna {
-  border-color: #544a6f !important;
+  border-color: #806ab2 !important;
 }
 
 .border-phoenix {
@@ -47,6 +47,10 @@
 
 .border-skye {
   border-color:	#73c697 !important;
+}
+
+.border-sova {
+  border-color: #4362a9 !important;
 }
 .bg-darker {
   background-color: #313131;
@@ -97,6 +101,29 @@
   background-color: #9c528b;
 }
 
+.text-reyna {
+  color:#806ab2 !important;
+}
+
+.text-raze {
+  color:#dd9160 !important;
+}
+
+.text-phoenix {
+  color:#d6b896 !important;
+}
+
+.text-breach {
+  color:#aa441d !important;
+}
+
+.text-sova {
+  color:#4362a9 !important;
+}
+
+.text-skye {
+  color:#73c697 !important;
+}
 .text-size-5 {
   font-size: 1.25rem;
 }

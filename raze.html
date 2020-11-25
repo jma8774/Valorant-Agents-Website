@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Jia Ming Ma">
-    <link rel="icon" href="logo.svg">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <title>Valorant Agents Sheet</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Custom styles for this template -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="custom_css.css" rel="stylesheet">
+    <script src="custom_js.js"></script>
+    </script>
   </head>
 
   <body class="bg-dark mt-5 py-5">
@@ -24,7 +27,144 @@
 
   <main role="main" class="container">
     <div class="w-50 pt-2 pb-5 mx-auto text-center text-light">
-      <h1 class='pb-2 shadow-title'> <span class="text-light font-weight-bold"> Raze? </span></h1>
+      <h1 class='shadow-title'><span class="text-danger text-size-5">NO.12 //</span><span class="text-raze font-weight-bold"> RAZE </span></h1>
+      <div class=""><small>"Fire in the hole!"</small></div>
+    </div>
+    <div class="row justify-content-around text-light">
+      <div class="col-lg-4">
+        <div class="card border border-raze bg-darkest mb-5 shadow-lg">
+          <img src="agents/raze_m.png" class="card-img-top" alt="">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-darkest">
+              <div class="row">
+                <div class="col-lg-5"><strong> Real Name </strong></div>
+                <div class="col-lg-7"> Izzy </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-top border-bottom border-raze">
+              <div class="row">
+                <div class="col-lg-5"><strong> Origin </strong></div>
+                <div class="col-lg-7"> Brazil </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-bottom border-raze">
+              <div class="row">
+                <div class="col-lg-5"><strong>Affiliation </strong></div>
+                <div class="col-lg-7"> Valorant Protocol </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest">
+                <div class="badge badge-danger"> <img height="10px" style="vertical-align: top" src="agents/duelist.png"> Duelist </div>
+                <div class="badge bg-pink"> Female </div>
+                <div class="badge badge-light"> Easy </div>
+                <div class="badge badge-warning"> Number 12 </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-raze shadow-lg">
+              <strong class="card-header border-bottom border-raze"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>Biography </strong>
+              <div class="card-body">
+                <div class="mt-3"> <small class="text-muted"> 
+                "Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of 'boom'." 
+                </small> </div>
+                <p class="card-text mt-4 mb-2"> 
+                  Raze's playstyle is very aggressive compared to many of the other agents in VALORANT, as most of her abilities are focused on <span class="text-danger">mobility and damage</span> instead of intel gathering or support. She is one of the few agents where most of her abilities are primarily meant to deal damage, namely <span class="text-danger">Paint Shells</span> and <span class="text-danger">Showstopper</span>. Her <span class="text-danger">Blast Packs</span> allow her to fly around the map alongside her <span class="text-danger">Boom Bot</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-100"> </div>
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-raze shadow-lg">
+              <strong class="card-header border-bottom border-raze"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg> Abilities </strong>
+              <div class="card-body text-center">
+                <div class="btn-toolbar btn-toolbar-sm mt-3 d-inline-block" role="group" aria-label="Basic example">
+                  <button id="a1-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/raze_1.png"></button>
+                  <button id="a2-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/raze_2.png"></button>
+                  <button id="a3-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/raze_3.png"></button>
+                  <button id="a4-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/raze_4.png"></button>
+                </div>
+                <div id="a1"> <!-- Boom Bot -->
+                  <h3 class="text-danger"> <strong>Boom Bot</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> a Boom Bot. <strong class="text-warning">FIRE</strong> will deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Basic </div>
+                    <div class="badge badge-danger"> Damage: 125 </div>
+                    <div class="badge badge-success"> Duration: 10s </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 200 </div>
+                    <div class="badge badge-secondary"> HP: 100 </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a1-v" class="embed-responsive-item" autoplay loop muted><source src="agents/raze_1_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a2" class="no-display"> <!-- Blast Pack -->
+                  <h3 class="text-danger"> <strong>Blast Pack</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">INSTANTLY</strong> throw a Blast Pack that will stick to surfaces.
+                    <strong class="text-warning">RE-USE</strong> the ability after deployment to detonate, damaging and moving anything hit.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Basic </div>
+                    <div class="badge badge-danger"> Damage: 50 to Agents, 200 to Objects </div>
+                    <div class="badge badge-success"> Duration: 5s </div>
+                    <div class="badge badge-info"> Uses: 2 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 200 </div>
+                    <div class="badge badge-secondary"> Range: 1m </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a2-v" class="embed-responsive-item" autoplay loop muted><source src="agents/raze_2_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a3" class="no-display"> <!-- Paint Shells -->
+                  <h3 class="text-danger"> <strong>Paint Shells</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> a cluster grenade. <strong class="text-warning">FIRE</strong> to throw the grenade, which does damage and creates sub-munitions, each doing damage to anyone in their range.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Signature </div>
+                    <div class="badge badge-danger"> Damage: 55 Initial, 55 Each Cluster Nades </div>
+                    <div class="badge badge-success"> Fuse Time: 2s Primary, 1.3s Cluster </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: 2 Kills/Assists </div>
+                    <div class="badge badge-primary"> Cost: Free </div>
+                    <div class="badge badge-secondary"> HP: N/A </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a3-v" class="embed-responsive-item" autoplay loop muted><source src="agents/raze_3_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a4" class="no-display"> <!-- Showstopper -->
+                  <h3 class="text-danger"> <strong>Showstopper</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> a rocket launcher. <strong class="text-warning">FIRE</strong> shoots a rocket that does massive area damage on contact with anything.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Ultimate </div>
+                    <div class="badge badge-danger"> Damage: 150 </div>
+                    <div class="badge badge-success"> Duration: 10s </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 7 Charges </div>
+                    <div class="badge badge-secondary"> Equip Time: 1.4s Initial, 0.7s Quick Equip </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a4-v" class="embed-responsive-item" autoplay loop muted><source src="agents/raze_4_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </html>

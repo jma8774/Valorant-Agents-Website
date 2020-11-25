@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Jia Ming Ma">
-    <link rel="icon" href="logo.svg">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <title>Valorant Agents Sheet</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Custom styles for this template -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="custom_css.css" rel="stylesheet">
+    <script src="custom_js.js"></script>
+    </script>
   </head>
 
   <body class="bg-dark mt-5 py-5">
@@ -24,7 +27,144 @@
 
   <main role="main" class="container">
     <div class="w-50 pt-2 pb-5 mx-auto text-center text-light">
-      <h1 class='pb-2 shadow-title'> <span class="text-light font-weight-bold"> Reyna? </span></h1>
+      <h1 class='shadow-title'><span class="text-danger text-size-5">NO.07 //</span><span class="text-reyna font-weight-bold"> REYNA </span></h1>
+      <div class=""><small>"They will cower!"</small></div>
+    </div>
+    <div class="row justify-content-around text-light">
+      <div class="col-lg-4">
+        <div class="card border border-reyna bg-darkest mb-5 shadow-lg">
+          <img src="agents/reyna_m.png" class="card-img-top" alt="">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-darkest">
+              <div class="row">
+                <div class="col-lg-5"><strong> Real Name </strong></div>
+                <div class="col-lg-7"> Delaliah </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-top border-bottom border-reyna">
+              <div class="row">
+                <div class="col-lg-5"><strong> Origin </strong></div>
+                <div class="col-lg-7"> Mexico </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-bottom border-reyna">
+              <div class="row">
+                <div class="col-lg-5"><strong>Affiliation </strong></div>
+                <div class="col-lg-7"> Valorant Protocol </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest">
+                <div class="badge badge-danger"> <img height="10px" style="vertical-align: top" src="agents/duelist.png"> Duelist </div>
+                <div class="badge bg-pink"> Female </div>
+                <div class="badge badge-light"> Hard </div>
+                <div class="badge badge-warning"> Number 07 </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-reyna shadow-lg">
+              <strong class="card-header border-bottom border-reyna"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>Biography </strong>
+              <div class="card-body">
+                <div class="mt-3"> <small class="text-muted"> 
+                "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance." 
+                </small> </div>
+                <p class="card-text mt-4 mb-2"> 
+                Reyna has an aggressive, and duel-centric playstyle. Reyna's unique mechanic are the <span class="text-danger">Soul Orbs</span>, which drop when she kills an opponent and which, upon consumption, give her various bonuses — from massive <span class="text-danger">healing</span> to <span class="text-danger">invisibility</span>.
+                Reyna's ultimate ability is <span class="text-danger">Empress</span>, which turns her into a rapid-fire death machine, dramatically <span class="text-danger">increasing all her combat stats</span>. Every <span class="text-danger">kill renews Empress' duration</span>, and a skilled Reyna player can wipe away the entire team in one swift offense.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-100"> </div>
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-reyna shadow-lg">
+              <strong class="card-header border-bottom border-reyna"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg> Abilities </strong>
+              <div class="card-body text-center">
+                <div class="btn-toolbar btn-toolbar-sm mt-3 d-inline-block" role="group" aria-label="Basic example">
+                  <button id="a1-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/reyna_1.png"></button>
+                  <button id="a2-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/reyna_2.png"></button>
+                  <button id="a3-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/reyna_3.png"></button>
+                  <button id="a4-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/reyna_4.png"></button>
+                </div>
+                <div id="a1"> <!-- Leer -->
+                  <h3 class="text-danger"> <strong>Leer</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> an ethereal, destructible eye. <strong class="text-warning">ACTIVATE</strong> to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Basic </div>
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: 2s </div>
+                    <div class="badge badge-info"> Uses: 2 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 200 </div>
+                    <div class="badge badge-secondary"> HP: N/A </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a1-v" class="embed-responsive-item" autoplay loop muted><source src="agents/reyna_1_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a2" class="no-display"> <!-- Devour -->
+                  <h3 class="text-danger"> <strong>Devour</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">Soul Harvest:</strong> Enemies Killed by Reyna leave behind Soul Orbs that last 3 seconds. <strong class="text-warning">Devour: INSTANTLY</strong> consume a nearby soul orb, rapidly healing for a short duration. Health gained through this skill exceeding 100 decay over time. <strong class="text-warning">If Empress is active</strong>, this skill will automatically cast and not consume the Soul Orb
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Basic </div>
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: 3s Consume, 25s Overheal </div>
+                    <div class="badge badge-info"> Uses: 4 (Shared) </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 100 </div>
+                    <div class="badge badge-secondary"> HP: 33.3 HP/s </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a2-v" class="embed-responsive-item" autoplay loop muted><source src="agents/reyna_2_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a3" class="no-display"> <!-- Dismiss -->
+                  <h3 class="text-danger"> <strong>Dismiss</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">INSTANTLY</strong> consume a nearby Soul Orb, becoming intangible for a short duration. <strong class="text-warning">If Empress is active</strong>, she will also become invisible.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Signature </div>
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: 2s </div>
+                    <div class="badge badge-info"> Uses: 4 (Shared) </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 100 (1 Free) </div>
+                    <div class="badge badge-secondary"> HP: N/A </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a3-v" class="embed-responsive-item" autoplay loop muted><source src="agents/reyna_3_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a4" class="no-display"> <!-- Empress -->
+                  <h3 class="text-danger"> <strong>Empress</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">INSTANTLY</strong> enter a frenzy, increasing firing, equip and reload speed dramatically. Gain infinite charges of Soul Harvest abilities. Scoring a kill renews the duration.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Ultimate </div>
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: 30s </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: 1 Kill </div>
+                    <div class="badge badge-primary"> Cost: 6 Charges </div>
+                    <div class="badge badge-secondary"> Frenzy: 15% ROF, 20% Equip/Reload Speed </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a4-v" class="embed-responsive-item" autoplay loop muted><source src="agents/reyna_4_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </html>

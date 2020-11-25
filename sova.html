@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Jia Ming Ma">
-    <link rel="icon" href="logo.svg">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <title>Valorant Agents Sheet</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Custom styles for this template -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="custom_css.css" rel="stylesheet">
+    <script src="custom_js.js"></script>
+    </script>
   </head>
 
   <body class="bg-dark mt-5 py-5">
@@ -24,7 +27,139 @@
 
   <main role="main" class="container">
     <div class="w-50 pt-2 pb-5 mx-auto text-center text-light">
-      <h1 class='pb-2 shadow-title'> <span class="text-light font-weight-bold"> Sova? </span></h1>
+      <h1 class='shadow-title'><span class="text-danger text-size-5">NO.04 //</span><span class="text-sova font-weight-bold"> Sova </span></h1>
+      <div class=""><small>“Nowhere to run!”</small></div>
+    </div>
+    <div class="row justify-content-around text-light">
+      <div class="col-lg-4">
+        <div class="card border border-sova bg-darkest mb-5 shadow-lg">
+          <img src="agents/sova_m.png" class="card-img-top" alt="">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-darkest">
+              <div class="row">
+                <div class="col-lg-5"><strong> Real Name </strong></div>
+                <div class="col-lg-7"> Unknown </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-top border-bottom border-sova">
+              <div class="row">
+                <div class="col-lg-5"><strong> Origin </strong></div>
+                <div class="col-lg-7"> Russia </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-bottom border-sova">
+              <div class="row">
+                <div class="col-lg-5"><strong>Affiliation </strong></div>
+                <div class="col-lg-7"> Valorant Protocol </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest">
+                <div class="badge badge-danger"> <img height="10px" style="vertical-align: top" src="agents/initiator.png"> Initiator </div>
+                <div class="badge bg-primary"> Male </div>
+                <div class="badge badge-light"> Hard </div>
+                <div class="badge badge-warning"> Number 04 </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-sova shadow-lg">
+              <strong class="card-header border-bottom border-sova"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>Biography </strong>
+              <div class="card-body">
+                <div class="mt-3"> <small class="text-muted"> 
+                  "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide." 
+                </small> </div>
+                <p class="card-text mt-4 mb-2"> 
+                  An archery expert, he can equip his bow with different bolts that <span class="text-danger">reveal enemy locations</span> or <span class="text-danger">shock nearby adversaries</span>. He can also deploy a <span class="text-danger">recon drone</span> to survey the battlefield, while his ultimate lets him <span class="text-danger">fire three deadly arrow shots through walls</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-100"> </div>
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-sova shadow-lg">
+              <strong class="card-header border-bottom border-sova"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg> Abilities </strong>
+              <div class="card-body text-center">
+                <div class="btn-toolbar btn-toolbar-sm mt-3 d-inline-block" role="group" aria-label="Basic example">
+                  <button id="a1-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/sova_1.png"></button>
+                  <button id="a2-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/sova_2.png"></button>
+                  <button id="a3-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/sova_3.png"></button>
+                  <button id="a4-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/sova_4.png"></button>
+                </div>
+                <div id="a1"> <!-- Owl Drone -->
+                  <h3 class="text-danger"> <strong>Owl Drone</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> an owl drone. <strong class="text-warning">FIRE</strong> to deploy and take control of movement of the drone. While in control of the drone, <strong class="text-warning">FIRE</strong> to shoot a marking dart. This dart will reveal the location of any player struck by the dart.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Cooldown: 5s Dart</div>
+                    <div class="badge badge-success"> Duration: 10s Drone, 2.4s Reveal (3 Pulses), 1.2s Pulse Delays </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 300 </div>
+                    <div class="badge badge-secondary"> HP: 120 </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a1-v" class="embed-responsive-item" autoplay loop muted><source src="agents/sova_1_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a2" class="no-display"> <!-- Shock Dart -->
+                  <h3 class="text-danger"> <strong>Shock Dart</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> a bow with a shock bolt. <strong class="text-warning">FIRE</strong> to send the explosive bolt forward, detonating upon collision and damaging players nearby. <strong class="text-warning">HOLD FIRE</strong> to extend the range of the projectile. <strong class="text-warning">ALTERNATE FIRE</strong> to add up to two bounces to this arrow.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Damage: 10-90 </div>
+                    <div class="badge badge-success"> Duration: N/A  </div>
+                    <div class="badge badge-info"> Uses: 2 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 100 </div>
+                    <div class="badge badge-secondary"> HP: N/A </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a2-v" class="embed-responsive-item" autoplay loop muted><source src="agents/sova_2_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a3" class="no-display"> <!-- Recon Bolt -->
+                  <h3 class="text-danger"> <strong>Recon Bolt</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> a bow with recon bolt. <strong class="text-warning">FIRE</strong> to send the recon bolt forward, activating upon collision and revealing the location of nearby enemies caught in the line of sight of the bolt. Enemies can destroy this bolt. <strong class="text-warning">HOLD FIRE</strong> to extend the range of the projective. <strong class="text-warning">ALTERNATE FIRE</strong> to add up to two bounces to this arrow.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: 1s Reveal, 5.625s Recon (3 Pulses), 1.875s Pulse Delays </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: 35s </div>
+                    <div class="badge badge-primary"> Cost: Free </div>
+                    <div class="badge badge-secondary"> HP: N/A </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a3-v" class="embed-responsive-item" autoplay loop muted><source src="agents/sova_3_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a4" class="no-display"> <!-- Hunter's Fury -->
+                  <h3 class="text-danger"> <strong>Hunter's Fury</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> a bow with three long-range, wall-piercing energy blasts. <strong class="text-warning">FIRE</strong> to release an energy blast in a line in front of Sova, dealing damage and revealing the location of enemies caught in the line. This ability can be RE-USED up to two more times while the ability timer is active.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Damage: 80 x 3 </div>
+                    <div class="badge badge-success"> Duration: 6.5s Skill, 1.2s Reveal </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 7 Charges </div>
+                    <div class="badge badge-secondary"> Range: 66m </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a4-v" class="embed-responsive-item" autoplay loop muted><source src="agents/sova_4_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </html>
