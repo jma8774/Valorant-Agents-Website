@@ -1,8 +1,14 @@
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  alert("mobile phone")
-} else {
-  alert("desktop")
-}
+var isMobile = false;
+
+$(document).ready(function(){
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('#a1-v').prop('controls',true);
+    $('#a2-v').prop('controls',true);
+    $('#a3-v').prop('controls',true);
+    $('#a4-v').prop('controls',true);
+    isMobile = true;
+  }
+});
 
 $(document).ready(function(){
   $("#a1-btn").click(function(){
@@ -10,7 +16,8 @@ $(document).ready(function(){
     $("#a2").hide();
     $("#a3").hide();
     $("#a4").hide();
-    $('#a1-v').trigger('play');
+    if(!isMobile)
+      $('#a1-v').trigger('load');
     $('#a2-v').trigger('pause');
     $('#a3-v').trigger('pause');
     $('#a4-v').trigger('pause');
@@ -24,7 +31,8 @@ $(document).ready(function(){
     $("#a3").hide();
     $("#a4").hide();
     $('#a1-v').trigger('pause'); 
-    $('#a2-v').trigger('load');
+    if(!isMobile)
+      $('#a2-v').trigger('load');
     $('#a3-v').trigger('pause');
     $('#a4-v').trigger('pause');
 
@@ -39,7 +47,8 @@ $(document).ready(function(){
     $("#a4").hide();
     $('#a1-v').trigger('pause');
     $('#a2-v').trigger('pause');
-    $('#a3-v').trigger('load');
+    if(!isMobile)
+      $('#a3-v').trigger('load');
     $('#a4-v').trigger('pause');
   });
 });
@@ -53,6 +62,7 @@ $(document).ready(function(){
     $('#a1-v').trigger('pause'); 
     $('#a2-v').trigger('pause');
     $('#a3-v').trigger('pause');
-    $('#a4-v').trigger('load');
+    if(!isMobile)
+      $('#a4-v').trigger('load');
   });
 });
