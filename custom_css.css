@@ -52,6 +52,11 @@
 .border-sova {
   border-color: #4362a9 !important;
 }
+
+.border-viper {
+  border-color: #1f8044 !important;
+}
+
 .bg-darker {
   background-color: #313131;
 }
@@ -66,7 +71,7 @@
 }
 
 .char-zoom:hover {
-  transform: scale(1.8);
+  transform: scale(1.6);
   background-color: rgb(34, 40, 49, 1);
   z-index: 1;
 }
@@ -124,6 +129,19 @@
 .text-skye {
   color:#73c697 !important;
 }
+
+.text-omen {
+  color:#7079b7 !important;
+}
+
+.text-brimstone {
+  color: #6e4f4c !important;
+}
+
+.text-viper {
+  color: #1f8044 !important;
+}
+
 .text-size-5 {
   font-size: 1.25rem;
 }
