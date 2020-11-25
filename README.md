@@ -11,4 +11,4 @@ So far, all I have is the cover page which consists of a responsive and minimali
 ## Jett Agent Page
 Here is the Jett page on a PC desktop browser and on my mobile device browser.
 
-<img src="https://i.imgur.com/4vc9JP0.png" height="425"/> <img src="https://i.imgur.com/cCHtyts.png" height="425"/> <img src="https://i.imgur.com/3RhHNOA.png" height="425"/>
+<img src="https://i.imgur.com/4vc9JP0.png" height="400"/> <img src="https://i.imgur.com/cCHtyts.png" height="400"/> <img src="https://i.imgur.com/3RhHNOA.png" height="400"/>
