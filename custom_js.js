@@ -1,6 +1,8 @@
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   alert("mobile phone")
- }
+} else {
+  alert("desktop")
+}
 
 $(document).ready(function(){
   $("#a1-btn").click(function(){
