@@ -8,10 +8,13 @@
     <link rel="icon" href="logo.svg">
     <title>Valorant Agents Sheet</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Custom styles for this template -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="custom_css.css" rel="stylesheet">
+    <script src="custom_js.js"></script>
+    </script>
   </head>
 
   <body class="bg-dark mt-5 py-5">
@@ -24,7 +27,141 @@
 
   <main role="main" class="container">
     <div class="w-50 pt-2 pb-5 mx-auto text-center text-light">
-      <h1 class='pb-2 shadow-title'> <span class="text-light font-weight-bold"> Jett? </span></h1>
+      <h1 class='shadow-title'><span class="text-danger text-size-5">NO.11 //</span><span class="text-light font-weight-bold"> JETT </span></h1>
+    </div>
+    <div class="row justify-content-around text-light">
+      <div class="col-lg-4">
+        <div class="card border border-jett bg-darkest mb-5 shadow-lg">
+          <img src="agents/jett_m.png" class="card-img-top" alt="">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-darkest">
+              <div class="row">
+                <div class="col-lg-5"><strong> Real Name </strong></div>
+                <div class="col-lg-7"> Joon-Hee </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-top border-bottom border-jett">
+              <div class="row">
+                <div class="col-lg-5"><strong> Origin </strong></div>
+                <div class="col-lg-7"> South Korea </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-bottom border-jett">
+              <div class="row">
+                <div class="col-lg-5"><strong>Affiliation </strong></div>
+                <div class="col-lg-7"> Valorant Protocol </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest">
+                <div class="badge badge-danger"> <img height="10px" style="vertical-align: top" src="agents/duelist.png"> Duelist </div>
+                <div class="badge bg-pink"> Female </div>
+                <div class="badge badge-warning"> Number 11 </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-jett shadow-lg">
+              <strong class="card-header border-bottom border-jett"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>Biography </strong>
+              <div class="card-body">
+                <div class="mt-3"> <small class="text-muted"> 
+                "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them." 
+                </small> </div>
+                <p class="card-text mt-4 mb-2"> 
+                From Korea comes Jett, an agile fighter who <span class="text-danger"> prioritizes movement </span> over everything. Her abilities include a <span class="text-danger">teleportation-based dash</span> and an <span class="text-danger">updraft</span> that lets her reach higher ledges. She also has a <span class="text-danger">smokebomb </span> ability to hinder sightlines and a powerful <span class="text-danger">Bladestorm </span> ultimate that deals moderate-to-heavy damage and remains accurate even while she's moving
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-100"> </div>
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-jett shadow-lg">
+              <strong class="card-header border-bottom border-jett"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg> Abilities </strong>
+              <div class="card-body text-center">
+                <div class="btn-toolbar btn-toolbar-sm mt-3 d-inline-block" role="group" aria-label="Basic example">
+                  <button id="a1-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/jett_1.png"></button>
+                  <button id="a2-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/jett_2.png"></button>
+                  <button id="a3-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/jett_3.png"></button>
+                  <button id="a4-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/jett_4.png"></button>
+                </div>
+                <div id="a1"> <!-- Cloudburst -->
+                  <h3> <strong>Cloudburst</strong> </h3>
+                  <div class="mb-3"> 
+                    Instantly throw a projectile that expands into a brief vision cloud on impact with a surface. <strong>Hold</strong> the ability key to curve the cloud in the direction of your crosshair. 
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Basic </div>
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: 7s </div>
+                    <div class="badge badge-info"> Hold: 3 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 100 </div>
+                    <div class="badge badge-secondary"> HP: N/A </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a1-v" class="embed-responsive-item" autoplay loop muted><source src="agents/jett_1_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a2" class="no-display"> <!-- Updraft -->
+                  <h3> <strong>Updraft</strong> </h3>
+                  <div class="mb-3"> 
+                    Instantly propel Jett high into the air.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Basic </div>
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: N/A </div>
+                    <div class="badge badge-info"> Hold: 2 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 100 </div>
+                    <div class="badge badge-secondary"> HP: N/A </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a2-v" class="embed-responsive-item" autoplay loop muted><source src="agents/jett_2_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a3" class="no-display"> <!-- Tailwind -->
+                  <h3> <strong>Tailwind</strong> </h3>
+                  <div class="mb-3"> 
+                    Instantly propel in the direction she is moving. If Jett is standing still, she will propel forward.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Signature </div>
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: N/A </div>
+                    <div class="badge badge-info"> Hold: 1 </div>
+                    <div class="badge badge-light"> Reset: 2 Kills </div>
+                    <div class="badge badge-primary"> Cost: Free </div>
+                    <div class="badge badge-secondary"> HP: N/A </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a3-v" class="embed-responsive-item" autoplay loop muted><source src="agents/jett_3_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a4" class="no-display"> <!-- Blade Storm -->
+                  <h3> <strong>Blade Storm</strong> </h3>
+                  <div class="mb-3"> 
+                    Equip a set of 5 highly accurate throwing knives. <strong>Fire</strong> to throw a single knife. <strong>Alternative Fire</strong> to throw all remaining daggers at once. Restocks upon killing an enemy.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-warning"> Type: Ultimate </div>
+                    <div class="badge badge-danger"> Damage: 50 x 5 </div>
+                    <div class="badge badge-success"> Duration: ∞ </div>
+                    <div class="badge badge-info"> Hold: 1 </div>
+                    <div class="badge badge-light"> Reset: 1 Kill </div>
+                    <div class="badge badge-primary"> Cost: 6 Charges </div>
+                    <div class="badge badge-secondary"> HP: N/A </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a4-v" class="embed-responsive-item" autoplay loop muted><source src="agents/jett_4_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </html>

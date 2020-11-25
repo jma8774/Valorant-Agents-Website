@@ -67,6 +67,15 @@
   z-index: 1;
 }
 
+.btn-zoom {
+  transition: transform .2s;
+}
+
+.btn-zoom:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
 .bg-img {
   background-image: url(background.png);
   background-repeat: no-repeat;
@@ -77,5 +86,17 @@
 }
 
 .no-display {
+  display: none;
+}
+
+.no-opacity {
   opacity: 0;
+}
+
+.bg-pink {
+  background-color: #9c528b;
+}
+
+.text-size-5 {
+  font-size: 1.25rem;
 }
