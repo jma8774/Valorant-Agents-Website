@@ -176,3 +176,21 @@ $(document).ready(function(){
     btn.removeClass("border-bottom");
   });
 });
+
+$(document).ready(function(){
+  $("#contract-toggle").click(function(){
+    $("#contract-toggle").next().collapse('toggle');
+  });
+});
+
+$(document).ready(function(){
+  var btn = $("#contract-toggle");
+  btn.next().on('show.bs.collapse', function () {
+    btn.addClass(border_character);
+    btn.addClass("border-bottom");
+  });
+  btn.next().on('hidden.bs.collapse', function () {
+    btn.removeClass(border_character);
+    btn.removeClass("border-bottom");
+  });
+});
