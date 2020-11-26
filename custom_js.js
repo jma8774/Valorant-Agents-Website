@@ -1,3 +1,4 @@
+// Agent
 var isMobile = false;
 
 $(document).ready(function(){
@@ -64,5 +65,61 @@ $(document).ready(function(){
     $('#a3-v').trigger('pause');
     if(!isMobile)
       $('#a4-v').trigger('load');
+  });
+});
+
+
+// Index
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(document).ready(function(){
+  $("#btn-classes").click(function(){
+    $(".initiator").show();
+    $(".controller").show();
+    $(".sentinel").show();
+    $(".duelist").show();
+    $(".not-class").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#btn-initiator").click(function(){
+    $(".initiator").show();
+    $(".controller").hide();
+    $(".sentinel").hide();
+    $(".duelist").hide();
+    $(".not-class").hide();
+  });
+});
+
+$(document).ready(function(){
+  $("#btn-controller").click(function(){
+    $(".initiator").hide();
+    $(".controller").show();
+    $(".sentinel").hide();
+    $(".duelist").hide();
+    $(".not-class").hide();
+  });
+});
+
+$(document).ready(function(){
+  $("#btn-sentinel").click(function(){
+    $(".initiator").hide();
+    $(".controller").hide();
+    $(".sentinel").show();
+    $(".duelist").hide();
+    $(".not-class").hide();
+  });
+});
+
+$(document).ready(function(){
+  $("#btn-duelist").click(function(){
+    $(".initiator").hide();
+    $(".controller").hide();
+    $(".sentinel").hide();
+    $(".duelist").show();
+    $(".not-class").hide();
   });
 });

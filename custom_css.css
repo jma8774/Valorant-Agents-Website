@@ -1,3 +1,11 @@
+html {
+  overflow-y: scroll;
+}
+
+html, body {
+  height: 100%;
+}
+
 .shadow-title {
   text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 }
@@ -61,6 +69,10 @@
   background-color: #313131;
 }
 
+.bg-darker-light {
+  background-color: rgb(34, 40, 49, 0.75);
+}
+
 .bg-darkest {
   background-color: #222831;
 }
@@ -86,12 +98,13 @@
 }
 
 .bg-img {
-  background-image: url(background.png);
+  background-image: url(agents/background.png);
   background-repeat: no-repeat;
   width: auto;
   height: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .no-display {

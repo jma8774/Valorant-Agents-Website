@@ -8,13 +8,17 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <title>Valorant Agents Sheet</title>
 
+    <!-- JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    <!-- Custom css/js for this template -->
     <link href="custom_css.css" rel="stylesheet">
+    <script src="custom_js.js"></script>
   </head>
 
-  <body class="bg-dark mt-5 py-5 bg-img">
+  <body class="mt-5 py-5 bg-img bg-dark">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="btn btn-outline-dark bg-dark border-2" href='#'>
         <span class="navbar-toggler-icon"></span>
@@ -22,52 +26,59 @@
     </nav>
   </body>
 
-<main role="main" class="container">
-  <div class="w-50 pt-2 pb-5 mx-auto text-center text-light">
+<main role="main" class="container text-center">
+  <div class="w-50 pt-3 mx-auto text-center text-light">
     <h1 class='pb-2 shadow-title'> <span class="text-danger font-weight-bold">VALORANT</span> Agents Sheet</h1>
     <p class="shadow-title">Use this website to learn more about the Valorant agents.</p>
   </div>
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" id="btn-classes" class="btn btn-dark shadow">All Classes</button>
+    <button type="button" id="btn-initiator" class="btn btn-dark shadow" data-toggle="tooltip" data-placement="top" title="Initiator"><img width="16px" src="agents/initiator.svg"></button>
+    <button type="button" id="btn-controller" class="btn btn-dark shadow" data-toggle="tooltip" data-placement="top" title="Controller"><img src="agents/controller.svg"></button>
+    <button type="button" id="btn-sentinel" class="btn btn-dark shadow" data-toggle="tooltip" data-placement="top" title="Sentinel"><img src="agents/sentinel.svg"></button>
+    <button type="button" id="btn-duelist" class="btn btn-dark shadow" data-toggle="tooltip" data-placement="top" title="Duelist"><img src="agents/duelist.svg"></button>
+  </div>
   <div class="container mt-2 pt-3 px-5 ">
     <div class="row justify-content-around pb-5 px-5">
-      <div class="col-xl-2 mb-3 text-center border-bottom border-breach border-3 shadow-lg char-zoom rounded">
+      <div class="col-xl-2 mb-3 text-center border-bottom border-breach border-3 shadow-lg char-zoom rounded initiator">
         <a href='breach'> <img class="" height="200px" src="agents/breach_m.png" alt=""> </a>
       </div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-brimstone border-3 shadow-lg char-zoom rounded">
+      <div class="col-xl-2 mb-3 text-center border-bottom border-brimstone border-3 shadow-lg char-zoom rounded controller">
         <a href='brimstone'> <img class="" height="200px" src="agents/brimstone_m.png" alt=""> </a>
       </div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-cypher border-3 shadow-lg char-zoom rounded">
+      <div class="col-xl-2 mb-3 text-center border-bottom border-cypher border-3 shadow-lg char-zoom rounded sentinel">
         <a href='cypher'> <img class="" height="200px" src="agents/cypher_m.png" alt=""> </a>
       </div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-white border-3 shadow-lg char-zoom rounded">
+      <div class="col-xl-2 mb-3 text-center border-bottom border-white border-3 shadow-lg char-zoom rounded duelist">
         <a href='jett'> <img class="" height="200px" src="agents/jett_m.png" alt=""> </a>
       </div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-killjoy border-3 shadow-lg char-zoom rounded">
+      <div class="col-xl-2 mb-3 text-center border-bottom border-killjoy border-3 shadow-lg char-zoom rounded sentinel">
         <a href='killjoy'> <img class="" height="200px" src="agents/killjoy_m.png" alt=""> </a>
       </div>
-      <div class="w-100"></div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-sage border-3 shadow-lg char-zoom rounded">
+      <div class="w-100 not-class"></div>
+      <div class="col-xl-2 mb-3 text-center border-bottom border-sage border-3 shadow-lg char-zoom rounded controller">
         <a href='omen'> <img class="" height="200px" src="agents/omen_m.png" alt=""> </a>
       </div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-phoenix border-3 shadow-lg char-zoom rounded">
+      <div class="col-xl-2 mb-3 text-center border-bottom border-phoenix border-3 shadow-lg char-zoom rounded duelist">
         <a href='phoenix'> <img class="" height="200px" src="agents/phoenix_m.png" alt=""> </a>
       </div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-raze border-3 shadow-lg char-zoom rounded">
+      <div class="col-xl-2 mb-3 text-center border-bottom border-raze border-3 shadow-lg char-zoom rounded duelist">
         <a href='raze'> <img class="" height="200px" src="agents/raze_m.png" alt=""> </a>
       </div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-reyna border-3 shadow-lg char-zoom rounded">
+      <div class="col-xl-2 mb-3 text-center border-bottom border-reyna border-3 shadow-lg char-zoom rounded duelist">
         <a href='reyna'> <img class="" height="200px" src="agents/reyna_m.png" alt=""> </a>
       </div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-sage border-3 shadow-lg char-zoom rounded">
+      <div class="col-xl-2 mb-3 text-center border-bottom border-sage border-3 shadow-lg char-zoom rounded sentinel">
         <a href='sage'> <img class="" height="200px" src="agents/sage_m.png" alt=""> </a>
       </div>
-      <div class="w-100"></div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-skye border-3 shadow-lg char-zoom rounded">
+      <div class="w-100 not-class"></div>
+      <div class="col-xl-2 mb-3 text-center border-bottom border-skye border-3 shadow-lg char-zoom rounded initiator">
         <a href='skye'> <img class="" height="200px" src="agents/skye_m.png" alt=""> </a>
       </div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-primary border-3 shadow-lg char-zoom rounded">
+      <div class="col-xl-2 mb-3 text-center border-bottom border-primary border-3 shadow-lg char-zoom rounded initiator">
         <a href='sova'> <img class="" height="200px" src="agents/sova_m.png" alt=""> </a>
       </div>
-      <div class="col-xl-2 mb-3 text-center border-bottom border-success border-3 shadow-lg char-zoom rounded">
+      <div class="col-xl-2 mb-3 text-center border-bottom border-success border-3 shadow-lg char-zoom rounded controller">
         <a href='viper'> <img class="" height="200px" src="agents/viper_m.png" alt=""> </a>
       </div>
     </div>
