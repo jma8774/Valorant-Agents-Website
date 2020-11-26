@@ -138,7 +138,8 @@ $(document).ready(function(){
 var border_character = ""
 $(document).ready(function(){
   var classes = $("#bio-toggle").prop("classList");
-  border_character = classes[2];
+  if(classes)
+    border_character = classes[2];
 });
 
 $(document).ready(function(){
