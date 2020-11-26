@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Jia Ming Ma">
-    <link rel="icon" href="logo.svg">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <title>Valorant Agents Sheet</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Custom styles for this template -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="custom_css.css" rel="stylesheet">
+    <script src="custom_js.js"></script>
+    </script>
   </head>
 
   <body class="bg-dark mt-5 py-5">
@@ -24,7 +27,142 @@
 
   <main role="main" class="container">
     <div class="w-50 pt-2 pb-5 mx-auto text-center text-light">
-      <h1 class='pb-2 shadow-title'> <span class="text-light font-weight-bold"> Killjoy? </span></h1>
+      <h1 class='shadow-title'><span class="text-danger text-size-5">NO.08 //</span><span class="text-killjoy font-weight-bold"> KILLJOY </span></h1>
+      <div class=""><small>“You should run!”</small></div>
+    </div>
+    <div class="row justify-content-around text-light">
+      <div class="col-lg-4">
+        <div class="card border border-killjoy bg-darkest mb-5 shadow-lg">
+          <img src="agents/killjoy_m.png" class="card-img-top" alt="">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-darkest">
+              <div class="row">
+                <div class="col-lg-5"><strong> Real Name </strong></div>
+                <div class="col-lg-7"> Unknown </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-top border-bottom border-killjoy">
+              <div class="row">
+                <div class="col-lg-5"><strong> Origin </strong></div>
+                <div class="col-lg-7"> Germany </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-bottom border-killjoy">
+              <div class="row">
+                <div class="col-lg-5"><strong>Affiliation </strong></div>
+                <div class="col-lg-7"> Valorant Protocol </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest">
+                <div class="badge badge-danger"> <img height="10px" style="vertical-align: top" src="agents/sentinel.png"> Sentinel </div>
+                <div class="badge bg-pink"> Female </div>
+                <div class="badge badge-light"> Medium </div>
+                <div class="badge badge-warning"> Number 08 </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-killjoy shadow-lg">
+              <strong class="card-header border-bottom border-killjoy"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>Biography </strong>
+              <div class="card-body">
+                <div class="mt-3"> <small class="text-muted"> 
+                  "The genius of Germany. Killjoy secures the battlefield with ease using her arsenal of inventions. If the damage from her gear doesn't stop her enemies, her robots' debuff will help make short work of them." 
+                </small> </div>
+                <p class="card-text mt-4 mb-2"> 
+                  Killjoy is a sentinel who makes use of her many inventions in battle. She can set up a <span class="text-danger">Turret</span> and an <span class="text-danger">Alarmbot</span> for security surveillance to ensure no enemies are around. Using her <span class="text-danger">grenades and Lockdown device</span>, she can cut off enemy movement if they are around.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-100"> </div>
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-killjoy shadow-lg">
+              <strong class="card-header border-bottom border-killjoy"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg> Abilities </strong>
+              <div class="card-body text-center">
+                <div class="btn-toolbar btn-toolbar-sm mt-3 d-inline-block" role="group" aria-label="Basic example">
+                  <button id="a1-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/killjoy_1.png"></button>
+                  <button id="a2-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/killjoy_2.png"></button>
+                  <button id="a3-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/killjoy_3.png"></button>
+                  <button id="a4-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/killjoy_4.png"></button>
+                </div>
+                <div id="a1"> <!-- Nanoswarm -->
+                  <h3 class="text-killjoy shadow-title"> <strong>Nanoswarm</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> a Nanoswarm grenade. <strong class="text-warning">FIRE</strong> to throw the grenade. Upon landing, the Nanoswarm goes covert. <strong class="text-warning">ACTIVATE</strong> the Nanoswarm to deploy a damaging swarm of nanobots.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Damage: 45 DPS (202.5 Max) </div>
+                    <div class="badge badge-success"> Duration: 4.5s (0.5s Activation Delay) </div>
+                    <div class="badge badge-info"> Uses: 2 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 200 </div>
+                    <div class="badge badge-warning"> HP: 1 </div>
+                    <div class="badge badge-secondary"> Detection Range: 3.5m </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a1-v" class="embed-responsive-item" autoplay loop muted><source src="agents/killjoy_1_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a2" class="no-display"> <!-- Alarmbot -->
+                  <h3 class="text-killjoy shadow-title"> <strong>Alarmbot</strong> </h3>
+                  <div class="mb-3">
+                    <strong class="text-warning">EQUIP</strong> a covert Alarmbot. <strong class="text-warning">FIRE</strong> to deploy a bot that hunts down enemies that get in range. After reaching its target, the bot explodes, applying Vulernable. <strong class="text-warning">HOLD EQUIP</strong> to recall a deployed bot.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: ∞ (4s Vulernable)  </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: Pick Up (7s CD) </div>
+                    <div class="badge badge-primary"> Cost: 200 </div>
+                    <div class="badge badge-secondary"> HP: 1 </div>
+                    <div class="badge badge-warning"> Range: 7m Detection, 40m Deactivation </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a2-v" class="embed-responsive-item" autoplay loop muted><source src="agents/killjoy_2_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a3" class="no-display"> <!-- Turret -->
+                  <h3 class="text-killjoy shadow-title"> <strong>Turret</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> a Turret. FIRE to deploy a turret that fires at enemies in a 180 degree cone. <strong class="text-warning">HOLD EQUIP</strong> to recall the deployed turret.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Damage: 8 (0-20m), 6 (20-35m), 4 (35m+) </div>
+                    <div class="badge badge-success"> Delay: 2s Activation, 0.75s Shoot Delay </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: Pick Up (10s CD) </div>
+                    <div class="badge badge-primary"> Cost: Free </div>
+                    <div class="badge badge-secondary"> HP: 125 </div>
+                    <div class="badge badge-warning"> Deactivation Range: 40m </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a3-v" class="embed-responsive-item" autoplay loop muted><source src="agents/killjoy_3_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a4" class="no-display"> <!-- Lockdown -->
+                  <h3 class="text-killjoy shadow-title"> <strong>Lockdown</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> the Lockdown device. <strong class="text-warning">FIRE</strong> to deploy the device. After a long windup, the device Detains all enemies caught in the radius. The device can be destroyed by enemies.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: 13s Countdown, 8s Detain </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 7 Charges </div>
+                    <div class="badge badge-secondary"> HP: 150 </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a4-v" class="embed-responsive-item" autoplay loop muted><source src="agents/killjoy_4_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </html>

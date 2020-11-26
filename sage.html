@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Jia Ming Ma">
-    <link rel="icon" href="logo.svg">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <title>Valorant Agents Sheet</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Custom styles for this template -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="custom_css.css" rel="stylesheet">
+    <script src="custom_js.js"></script>
+    </script>
   </head>
 
   <body class="bg-dark mt-5 py-5">
@@ -24,7 +27,139 @@
 
   <main role="main" class="container">
     <div class="w-50 pt-2 pb-5 mx-auto text-center text-light">
-      <h1 class='pb-2 shadow-title'> <span class="text-light font-weight-bold"> Sage? </span></h1>
+      <h1 class='shadow-title'><span class="text-danger text-size-5">NO.03 //</span><span class="text-sage font-weight-bold"> SAGE </span></h1>
+      <div class=""><small>“I am both shield and sword!”</small></div>
+    </div>
+    <div class="row justify-content-around text-light">
+      <div class="col-lg-4">
+        <div class="card border border-sage bg-darkest mb-5 shadow-lg">
+          <img src="agents/sage_m.png" class="card-img-top" alt="">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-darkest">
+              <div class="row">
+                <div class="col-lg-5"><strong> Real Name </strong></div>
+                <div class="col-lg-7"> Mirai Kimur </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-top border-bottom border-sage">
+              <div class="row">
+                <div class="col-lg-5"><strong> Origin </strong></div>
+                <div class="col-lg-7"> China </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest border-bottom border-sage">
+              <div class="row">
+                <div class="col-lg-5"><strong>Affiliation </strong></div>
+                <div class="col-lg-7"> Valorant Protocol </div>
+              </div>
+            </li>
+            <li class="list-group-item bg-darkest">
+                <div class="badge badge-danger"> <img height="10px" style="vertical-align: top" src="agents/sentinel.png"> Sentinel </div>
+                <div class="badge bg-pink"> Female </div>
+                <div class="badge badge-light"> Easy </div>
+                <div class="badge badge-warning"> Number 03 </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-sage shadow-lg">
+              <strong class="card-header border-bottom border-sage"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>Biography </strong>
+              <div class="card-body">
+                <div class="mt-3"> <small class="text-muted"> 
+                  "The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight." 
+                </small> </div>
+                <p class="card-text mt-4 mb-2"> 
+                  The most prominent support character to date hails from China and brings <span class="text-danger">orbs</span> that <span class="text-danger">heal allies</span>, <span class="text-danger">slow enemies</span>, and <span class="text-danger">create barriers</span> out of the ground to impede the flow of a match. Her ultimate ability allows her to <span class="text-danger">resurrect a fallen ally</span>,which is significant in a game with no respawns.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-100"> </div>
+          <div class="col-lg-12">
+            <div class="card text-white bg-darkest mb-3 border border-sage shadow-lg">
+              <strong class="card-header border-bottom border-sage"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg> Abilities </strong>
+              <div class="card-body text-center">
+                <div class="btn-toolbar btn-toolbar-sm mt-3 d-inline-block" role="group" aria-label="Basic example">
+                  <button id="a1-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/sage_1.png"></button>
+                  <button id="a2-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/sage_2.png"></button>
+                  <button id="a3-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/sage_3.png"></button>
+                  <button id="a4-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/sage_4.png"></button>
+                </div>
+                <div id="a1"> <!-- Barrier Orb -->
+                  <h3 class="text-sage shadow-title"> <strong>Barrier Orb</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> a barrier orb. <strong class="text-warning">FIRE</strong> places a solid wall. <strong class="text-warning">ALT FIRE</strong> rotates the targeter.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: 30s (Decay at 8s) </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 300 </div>
+                    <div class="badge badge-secondary"> HP: 800 x 4  </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a1-v" class="embed-responsive-item" autoplay loop muted><source src="agents/sage_1_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a2" class="no-display"> <!-- Slow Orb -->
+                  <h3 class="text-sage shadow-title"> <strong>Slow Orb</strong> </h3>
+                  <div class="mb-3">
+                    <strong class="text-warning">EQUIP</strong> a slowing orb. <strong class="text-warning">FIRE</strong> to throw a slowing orb forward that detonates upon landing, creating a lingering field that slows players caught inside of it.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: 7s  </div>
+                    <div class="badge badge-info"> Uses: 2 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 100 </div>
+                    <div class="badge badge-secondary"> Effect: -50% Movement, -30% Jump Height </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a2-v" class="embed-responsive-item" autoplay loop muted><source src="agents/sage_2_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a3" class="no-display"> <!-- Heal Orb -->
+                  <h3 class="text-sage shadow-title"> <strong>Heal Orb</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> a healing orb. <strong class="text-warning">FIRE</strong> with your crosshairs over a damaged ally to activate a heal-over-time on them. <strong class="text-warning">ALT FIRE</strong> while Sage is damaged to activate a self heal-over-time.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: 5s </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: Free </div>
+                    <div class="badge badge-secondary"> Heal: 20 HP/s </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a3-v" class="embed-responsive-item" autoplay loop muted><source src="agents/sage_3_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+                <div id="a4" class="no-display"> <!-- Resurrection -->
+                  <h3 class="text-sage shadow-title"> <strong>Resurrection</strong> </h3>
+                  <div class="mb-3"> 
+                    <strong class="text-warning">EQUIP</strong> a resurrection ability. <strong class="text-warning">FIRE</strong> with your crosshairs placed over a dead ally to begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.
+                  </div>
+                  <div class="text-left ml-2 mb-4"> 
+                    <div class="badge badge-danger"> Damage: N/A </div>
+                    <div class="badge badge-success"> Duration: 3.3s Animation, 2s Invulnerability, 1.3s Vulnerability </div>
+                    <div class="badge badge-info"> Uses: 1 </div>
+                    <div class="badge badge-light"> Reset: N/A </div>
+                    <div class="badge badge-primary"> Cost: 7 Charges </div>
+                    <div class="badge badge-secondary"> HP: N/A </div>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video id="a4-v" class="embed-responsive-item" autoplay loop muted><source src="agents/sage_4_v.mp4" type="video/mp4" /></video>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </html>

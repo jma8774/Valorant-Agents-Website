@@ -142,6 +142,18 @@
   color: #1f8044 !important;
 }
 
+.text-sage {
+  color: #5dbcd2 !important;
+}
+
+.text-cypher {
+  color: #8fa0ab !important;
+}
+
+.text-killjoy {
+  color: #ddbd5e !important;
+}
+
 .text-size-5 {
   font-size: 1.25rem;
 }
