@@ -74,6 +74,10 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
 $(document).ready(function(){
   $("#btn-classes").click(function(){
     $(".initiator").show();
