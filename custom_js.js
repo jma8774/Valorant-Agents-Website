@@ -127,3 +127,9 @@ $(document).ready(function(){
     $(".not-class").hide();
   });
 });
+
+$(document).ready(function(){
+  $("#btn-home").click(function(){
+    window.open('https://github.com/jma8774/Valorant-Agents-Website', '_blank');
+  });
+});
