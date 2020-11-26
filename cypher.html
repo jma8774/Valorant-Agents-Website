@@ -22,15 +22,23 @@
 
   <body class="bg-dark mt-5 py-5">
     <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
-      <a class="btn btn-outline-dark bg-dark border-2" data-toggle="tooltip" data-placement="bottom" title="Home Page" href='./'>
-        <span class="navbar-toggler-icon"></span>
-      </a>
-      <a type="button" class="btn btn-warning btn-circle border-2 ml-4" data-toggle="tooltip" data-placement="bottom" title="GitHub" href='https://github.com/jma8774' target="_blank">
-        <i class="fab fa-github fa-lg"></i>
-      </a>
-      <button type="button" class="btn btn-danger btn-circle ml-4" data-toggle="popover" title="Hey there!" data-placement="bottom" data-content="If you have any suggestions for the website, please let me know. Enjoy your stay! 😃">
-        <i class="fas fa-heart"></i>
-      </button>
+      <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="btn-lg btn-outline-dark bg-dark border-2" data-toggle="tooltip" data-placement="bottom" title="Home Page" href='./'>
+                  <span class="navbar-toggler-icon"></span>
+                </a>
+            </li>
+            <li class="nav-item ml-4">
+                <button type="button" id="btn-home" class="btn btn-warning btn-circle" data-toggle="tooltip" data-placement="bottom" title="GitHub">
+                  <i class="fab fa-github fa-lg"></i>
+                </button>
+            </li>
+            <li class="nav-item ml-4">
+                <button type="button" class="btn btn-danger btn-circle" data-toggle="popover" title="Hey there!" data-placement="bottom" data-content="If you have any suggestions for the website, please let me know. Enjoy your stay! 😃">
+                  <i class="fas fa-heart"></i>
+                </button>
+            </li>
+        </ul>
     </nav>
   </body>
 
