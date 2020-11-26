@@ -176,3 +176,13 @@ html, body {
   font-size: 12px;
   line-height: 1.42857;
 }
+
+#bio-toggle:hover {
+  user-select: none;
+  cursor: pointer;
+}
+
+#abilities-toggle:hover {
+  user-select: none;
+  cursor: pointer;
+}

@@ -1,4 +1,4 @@
-// Agent
+// Agent Buttons
 var isMobile = false;
 
 $(document).ready(function(){
@@ -68,8 +68,7 @@ $(document).ready(function(){
   });
 });
 
-
-// Index
+// Enable popovers and tooltips
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -78,6 +77,7 @@ $(function () {
   $('[data-toggle="popover"]').popover()
 })
 
+// Filter buttons for index.html
 $(document).ready(function(){
   $("#btn-classes").click(function(){
     $(".initiator").show();
@@ -129,7 +129,50 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("#btn-home").click(function(){
+  $("#btn-github").click(function(){
     window.open('https://github.com/jma8774/Valorant-Agents-Website', '_blank');
+  });
+});
+
+// Card Hide/Show Toggles
+var border_character = ""
+$(document).ready(function(){
+  var classes = $("#bio-toggle").prop("classList");
+  border_character = classes[2];
+});
+
+$(document).ready(function(){
+  $("#bio-toggle").click(function(){
+    $("#bio-toggle").next().collapse('toggle');
+  });
+});
+
+$(document).ready(function(){
+  var btn = $("#bio-toggle");
+  btn.next().on('show.bs.collapse', function () {
+    btn.addClass(border_character);
+    btn.addClass("border-bottom");
+  });
+  btn.next().on('hidden.bs.collapse', function () {
+    btn.removeClass(border_character);
+    btn.removeClass("border-bottom");
+  });
+});
+
+$(document).ready(function(){
+  $("#abilities-toggle").click(function(){
+    $("#abilities-toggle").next().collapse('toggle');
+  });
+});
+
+$(document).ready(function(){
+  var btn = $("#abilities-toggle");
+  btn.next().on('show.bs.collapse', function () {
+    btn.addClass(border_character);
+    btn.addClass("border-bottom");
+  });
+  btn.next().on('hidden.bs.collapse', function () {
+    btn.removeClass(border_character);
+    btn.removeClass("border-bottom");
   });
 });

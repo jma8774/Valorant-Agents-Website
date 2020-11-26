@@ -29,7 +29,7 @@
                 </a>
             </li>
             <li class="nav-item ml-4">
-                <button type="button" id="btn-home" class="btn btn-warning btn-circle" data-toggle="tooltip" data-placement="bottom" title="GitHub">
+                <button type="button" id="btn-github" class="btn btn-warning btn-circle" data-toggle="tooltip" data-placement="bottom" title="GitHub">
                   <i class="fab fa-github fa-lg"></i>
                 </button>
             </li>
@@ -83,8 +83,8 @@
         <div class="row justify-content-center">
           <div class="col-lg-12">
             <div class="card text-white bg-darkest mb-4 border border-brimstone shadow-lg">
-              <strong class="card-header border-bottom border-brimstone"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>Biography </strong>
-              <div class="card-body">
+              <strong id="bio-toggle" class="card-header border-bottom border-brimstone"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>Biography </strong>
+              <div class="card-body show">
                 <div class="mt-3"> <small class="text-muted"> 
                   "Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander." 
                 </small> </div>
@@ -97,8 +97,8 @@
           <div class="w-100"> </div>
           <div class="col-lg-12">
             <div class="card text-white bg-darkest mb-3 border border-brimstone shadow-lg">
-              <strong class="card-header border-bottom border-brimstone"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg> Abilities </strong>
-              <div class="card-body text-center">
+              <strong id="abilities-toggle" class="card-header border-bottom border-brimstone"> <svg class="bi bi-chevron-right" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg> Abilities </strong>
+              <div class="card-body text-center show">
                 <div class="btn-toolbar btn-toolbar-sm mt-3 d-inline-block" role="group" aria-label="Basic example">
                   <button id="a1-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/brimstone_1.png"></button>
                   <button id="a2-btn" type="button" class="btn btn-dark btn-zoom mb-3 mx-3 shadow"><img height="64px" src="agents/brimstone_2.png"></button>
